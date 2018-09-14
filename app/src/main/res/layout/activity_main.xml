@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tryText"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="21dp"
+        android:layout_marginEnd="69dp"
+        android:gravity="center_vertical"
+        android:text="TRY : "
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/cadText" />
+
+    <TextView
+        android:id="@+id/cadText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="33dp"
+        android:gravity="center_vertical"
+        android:text="CAD :"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tryText"
+        app:layout_constraintEnd_toEndOf="@+id/tryText"
+        app:layout_constraintStart_toStartOf="@+id/tryText"
+        app:layout_constraintTop_toBottomOf="@+id/jpyText" />
+
+    <TextView
+        android:id="@+id/jpyText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="38dp"
+        android:gravity="center_vertical"
+        android:text="JPY : "
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/cadText"
+        app:layout_constraintEnd_toEndOf="@+id/cadText"
+        app:layout_constraintStart_toStartOf="@+id/cadText"
+        app:layout_constraintTop_toBottomOf="@+id/usdText" />
+
+    <TextView
+        android:id="@+id/usdText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="37dp"
+        android:gravity="center_vertical"
+        android:text="USD :"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/jpyText"
+        app:layout_constraintEnd_toEndOf="@+id/jpyText"
+        app:layout_constraintStart_toStartOf="@+id/jpyText"
+        app:layout_constraintTop_toBottomOf="@+id/chfText" />
+
+    <TextView
+        android:id="@+id/chfText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="57dp"
+        android:gravity="center_vertical"
+        android:text="CHF :"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/usdText"
+        app:layout_constraintEnd_toEndOf="@+id/usdText"
+        app:layout_constraintStart_toStartOf="@+id/usdText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="76dp"
+        android:onClick="getRates"
+        android:text="GET RATES"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tryText" />
+</android.support.constraint.ConstraintLayout>
